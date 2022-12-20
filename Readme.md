@@ -13,6 +13,11 @@ export AWS_DEFAULT_REGION=...
 terraform apply
 ```
 
+# kubectl config 설정
+```sh
+aws eks update-kubeconfig --region "us-west-2" --name eks-test
+```
+
 # 참고자료
 * https://devblog.kakaostyle.com/ko/2022-03-31-3-build-eks-cluster-with-terraform/
 * https://cloudcasts.io/course/terraform/creating-our-vpc-module
