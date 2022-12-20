@@ -10,3 +10,11 @@ output "vpc_private_subnet_ids" {
   ]
   description = "vpc private subnets ids"
 }
+
+output "vpc_public_subnet_ids" {
+  value = [
+    for az, subent in aws_subnet.public :
+    subent.id
+  ]
+  description = "vpc public subnets ids"
+}
