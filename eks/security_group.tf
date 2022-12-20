@@ -27,4 +27,8 @@ resource "aws_security_group" "sec_groups" {
       ipv6_cidr_blocks = egress.value.ipv6_cidr_blocks
     }
   }
+
+  tags = {
+    Name        = "${var.cluster_name}"
+  }
 }

@@ -1,7 +1,13 @@
+variable "cluster_name" {
+  type        = string
+  description = "eks cluster name"
+  default     = "eks-test"
+}
+
 variable "cluster_version" {
   type        = string
   default     = "1.22"
-  description = "cluster_version"
+  description = "eks cluster version"
 }
 
 variable "vpc_id" {

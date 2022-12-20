@@ -1,5 +1,5 @@
 resource "aws_eks_cluster" "eks-cluster" {
-  name     = "eks-cluster"
+  name     = var.cluster_name
   role_arn = aws_iam_role.EKSClusterRole.arn
   version  = var.cluster_version
 
